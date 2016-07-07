@@ -1,7 +1,6 @@
 /* Services */
 
-angular.module('olympics.services', [])
-  .value('version', '0.1')
+angular.module('olympics')
   // Some standard D3 mouse events
   .service('mouseevents', function() {
     this.mouseover = function(d3, data, color, item) {

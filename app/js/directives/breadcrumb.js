@@ -13,7 +13,7 @@
    *  --- END ---
    * Developers: Do not remove this notification or license.
    */
-  angular.module('olympics.directives')
+  angular.module('olympics')
     .directive('breadcrumb', [
       function() {
         return {

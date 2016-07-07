@@ -1,14 +1,18 @@
 {
   "name": "olympics",
   "version": "0.0.1",
-  "description": "A hierarchical display of topic distributions",
+  "description": "a ui for looking at the similarity between competitors of the 2016 beer olympics",
   "private": true,
-  "author": "Decisive Analytics Corporation [dac.us]",
+  "author": "alison smith",
   "dependencies": {
     "angular": "1.5.x",
     "angular-route": "latest",
+    "angular-ui-router": "latest",
     "d3":"latest",
     "underscore":"latest",
-    "angular-material":"latest"
+    "angular-animate": "latest",
+    "angular-aria": "latest",
+    "angular-material":"latest",
+    "mdi":"latest"
   }
 }
