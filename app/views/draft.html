@@ -20,7 +20,9 @@
 
 <div class="teams-holder">
 	<div class="team-holder" ng-repeat="captain in captains">
-		<div ng-click="selectTeam(captain)" ng-class="{selected:selectedTeams[captain]}" class="name">{{captain}}</div>
+		<div ng-click="selectTeam(captain)" ng-class="{selected:selectedTeams[captain]}" class="name">
+			<md-icon md-font-icon="mdi mdi-star-outline" ng-if="selectedTeams[captain]"></md-icon>
+			{{captain}}</div>
 		<md-chips class="competitors" ng-model="teams[captain]" readonly="true">
 	</md-chips>
 	</div>

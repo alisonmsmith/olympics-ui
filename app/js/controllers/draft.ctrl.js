@@ -110,22 +110,18 @@ angular.module('olympics').controller('DraftCtrl', ['$scope', '$http',
         });
       });
 
-      console.log($scope.captain_similarities);
+     // console.log($scope.captain_similarities);
 
     };
 
     $scope.computeScraps = function() {
-      var scraps = ['Delaney', 'Alonzo', 'Joe Niewola ', 'Patrick Manion', 'Kevin Solari', 'Steve Crist'];
+     // var scraps = ['Delaney', 'Alonzo', 'Joe Niewola ', 'Patrick Manion', 'Kevin Solari', 'Steve Crist'];
 
-      //var scraps = $scope.competitors;
-
-      if ($scope.competitors.length !== 6) {
-        alert("you fucked up");
-      }
+      var scraps = $scope.competitors;
 
       console.log("computing scraps")
       console.log(scraps);
-      console.log($scope.captain_similarities);
+     // console.log($scope.captain_similarities);
       var best_score = 0;
       var best_combo = [];
 

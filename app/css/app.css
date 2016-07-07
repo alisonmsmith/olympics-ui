@@ -26,7 +26,7 @@ a:hover {
 }
 
 .competitor-chips > .md-chips > .md-chip.md-focused {
-    background-color: #2980b9;
+    background-color: #2ecc71;
 }
 
 .competitor-chips > .md-chips > .md-chip > .md-chip-remove-container{
@@ -57,6 +57,7 @@ a:hover {
     color: white;
     height: 100%;
     cursor: pointer;
+    font-weight: 600;
 }
 
 .instructions {
@@ -72,12 +73,16 @@ a:hover {
 }
 
 .team-holder > .name:hover {
-    background-color: #16a085;
-    
+    /*background-color: #2ecc71;
+    font-weight: 600;
+    color: white;*/
+    background-color: #16a085;    
 }
 
 .team-holder > .name.selected {
-    background-color: #16a085;
+   /* background-color: #2ecc71;
+    font-weight: 600;
+    color: white;*/
 }
 
 .team-holder > .competitors {
