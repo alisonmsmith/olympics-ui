@@ -1,0 +1,27 @@
+
+<div class="competitor-holder">
+	<md-chips class="competitor-chips" ng-model="competitors" md-on-select="selectCompetitor($chip)">
+	</md-chips>
+</div>
+
+<div class="scrap-holder" ng-if="competitors.length == 6">
+	<span class="instructions">
+		and now it's time to deal with the scraps. unlike prior years, scraps will be automatically paired with the captains with which they share the highest similarity based on the survey. are you guys ready??
+	</span>
+	
+	<div class="scrap-button" ng-click="computeScraps()">WILDCARD!</div>
+</div>
+
+<div ng-if="competitors.length > 6" class="draft-button" ng-click="draft()">draft</div>
+
+<md-icon md-font-icon="mdi mdi-undo" arial-label="undo" ng-if="competitors.length > 6 && prevTeam" class="undo-button" ng-click="undo()">
+<md-tooltip>undo last draft pick</md-tooltip>
+</md-icon>
+
+<div class="teams-holder">
+	<div class="team-holder" ng-repeat="captain in captains">
+		<div ng-click="selectTeam(captain)" ng-class="{selected:selectedTeams[captain]}" class="name">{{captain}}</div>
+		<md-chips class="competitors" ng-model="teams[captain]" readonly="true">
+	</md-chips>
+	</div>
+	</div>
