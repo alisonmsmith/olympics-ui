@@ -1,1 +1,20 @@
-BEER OLYMPICS SURVEY!
+<div class="title">BEER OLYMPICS 2K16 COMPETITOR SIMILARITY</div>
+
+<div class="instructions">click on your name to see a list of which other competitors you were most and least similar, click a name from the list list to compare your answers to that competitor</div>
+
+<div class="competitor-holder">
+	<md-chips class="competitor-chips" ng-model="competitors" md-on-select="selectChip($chip)">
+	</md-chips>
+</div>
+
+
+<div class="similarity-list">
+	<md-list flex>
+		<md-list-item class="competitor-list-item" ng-repeat="competitor in comparisonDisplay">
+			{{competitor.name}} ({{competitor.sim}})
+		</md-list-item>
+	</md-list>
+</div>
+
+
+<graph></graph>

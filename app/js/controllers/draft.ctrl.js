@@ -38,6 +38,8 @@ angular.module('olympics').controller('DraftCtrl', ['$scope', '$http',
           $scope.captain_similarities[name] = temp;
         }
       });
+
+      console.log($scope.captain_similarities);
       // we want a list of all competitors but not captains
       _.each(data, function(competitors, name) {
         if (_.indexOf($scope.captains, name) == -1) {

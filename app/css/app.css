@@ -13,6 +13,7 @@ a:hover {
     color: #666;
 }
 
+
 .competitor-holder {
     padding: 20px;
 }
@@ -26,10 +27,14 @@ a:hover {
 }
 
 .competitor-chips > .md-chips > .md-chip.md-focused {
-    background-color: #2ecc71;
+    background-color: #1abc9c;
 }
 
 .competitor-chips > .md-chips > .md-chip > .md-chip-remove-container{
+    display: none;
+}
+
+.competitor-chips > .md-chips > .md-chip-input-container {
     display: none;
 }
 
@@ -60,6 +65,17 @@ a:hover {
     font-weight: 600;
 }
 
+.title {
+    width: 100%;
+    text-align: center;
+    font-size: 24pt;
+    font-weight: 500;
+    background-color: #1abc9c;
+    color: white;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
 .instructions {
     width:60%;
     margin:auto;
@@ -70,6 +86,10 @@ a:hover {
     font-size: 14pt;
     font-weight: 600;
     color: #7f8c8d;
+}
+
+.competitor-list-item {
+    background-color: #bdc3c7;
 }
 
 .team-holder > .name:hover {
