@@ -1,6 +1,6 @@
 <div class="title">BEER OLYMPICS 2K16 COMPETITOR SIMILARITY</div>
 
-<div class="instructions">click on your name to see a list of which other competitors you were most and least similar</div>
+<div class="instructions">click on your name to see a list of which other competitors you were most and least similar based on your survey answers</div>
 
 <div class="competitor-holder">
 	<md-chips class="competitor-chips" ng-model="competitors" md-on-select="selectChip($chip)">
@@ -9,7 +9,7 @@
 
 
 <div class="similarity-holder" layout="row">
-	<md-list flex="30">
+	<md-list>
 		<md-list-item class="competitor-list-item" ng-repeat="competitor in comparisonDisplay">
 			{{competitor.name}} ({{competitor.sim}})
 		</md-list-item>

@@ -13,7 +13,6 @@ var app = angular.module('olympics', [
 ]);
 
 app.config(function($stateProvider, $urlRouterProvider, $mdThemingProvider) {
-  console.log('configuring the app');
 
     $urlRouterProvider.otherwise('/');
 
@@ -22,6 +21,11 @@ app.config(function($stateProvider, $urlRouterProvider, $mdThemingProvider) {
       url: '/',
       templateUrl: 'app/views/overview.html',
       controller: 'MainCtrl'
+    })
+    .state('badges', {
+      url: '/',
+      templateUrl: 'app/views/badges.html',
+      controller: 'BadgeCtrl'
     })
     .state('draft', {
       url: '/draft',
