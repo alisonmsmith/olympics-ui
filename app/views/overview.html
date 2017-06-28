@@ -8,12 +8,15 @@
 </div>
 
 
-<div class="similarity-list">
-	<md-list flex>
-		<md-list-item class="competitor-list-item" ng-repeat="competitor in comparisonDisplay">
+<div class="similarity-holder" layout="row">
+	<md-list flex="30">
+		<md-list-item ng-click="compare(competitor)" class="competitor-list-item" ng-repeat="competitor in comparisonDisplay">
 			{{competitor.name}} ({{competitor.sim}})
 		</md-list-item>
 	</md-list>
+	<md-content flex="70">
+	COMPARISON
+	</md-content>
 </div>
 
 

@@ -88,8 +88,12 @@ a:hover {
     color: #7f8c8d;
 }
 
+.similarity-holder {
+    background-color: rgb(224,224,224);
+}
+
 .competitor-list-item {
-    background-color: #bdc3c7;
+
 }
 
 .team-holder > .name:hover {
